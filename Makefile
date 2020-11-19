@@ -51,7 +51,7 @@ clean:
 		${RM} ${OBJS}
 
 fclean: clean
-		${RM} ${NAME} ${SONAME}
+		${RM} ${NAME}
 
 re:		fclean all
 
