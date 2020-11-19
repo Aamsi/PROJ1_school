@@ -37,16 +37,12 @@ SRCS =  ./ft_strlen.c \
 OBJS = ${SRCS:.c=.o}
 INCS = .
 NAME = libft.a
-SONAME = libft.so
 RM = rm -f
 
 .c.o:
 	${CC} ${CFLAGS} -I${INCS} -c $< -o ${<:.c=.o}
 
 all:	${NAME}
-
-so:
-	gcc -shared -o libft.so $(OBJS)
 
 ${NAME}: ${OBJS}
 	ar -rc ${NAME} ${OBJS}
