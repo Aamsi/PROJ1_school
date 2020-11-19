@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -fPIC
+CFLAGS = -Wall -Wextra -Werror
 SRCS =  ./srcs/ft_strlen.c \
 		./srcs/ft_isalpha.c \
 		./srcs/ft_isdigit.c \
