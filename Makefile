@@ -43,13 +43,13 @@ RM = rm -f
 .c.o:
 	${CC} ${CFLAGS} -I${INCS} -c $< -o ${<:.c=.o}
 
+all:	${NAME}
+
 so:
 	gcc -shared -o libft.so $(OBJS)
 
 ${NAME}: ${OBJS}
 	ar -rc ${NAME} ${OBJS}
-
-all:	${NAME}
 
 clean:
 		${RM} ${OBJS}
