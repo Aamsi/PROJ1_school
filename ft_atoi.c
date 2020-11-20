@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iouali <iouali@student.fr>                 +#+  +:+       +#+        */
+/*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 11:49:17 by iouali            #+#    #+#             */
-/*   Updated: 2020/11/17 13:06:40 by iouali           ###   ########.fr       */
+/*   Updated: 2020/11/20 01:05:52 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int     ft_atoi(const char *nptr)
     i = 0;
     while (is_space(tmp_nptr[i]))
         i++;
-    while (tmp_nptr[i] == '-' || tmp_nptr[i] == '+')
+    if (tmp_nptr[i] == '-' || tmp_nptr[i] == '+')
     {
         if (tmp_nptr[i] == '-')
             sign *= -1;

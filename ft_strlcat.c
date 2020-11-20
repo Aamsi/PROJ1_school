@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iouali <iouali@student.fr>                 +#+  +:+       +#+        */
+/*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 10:24:48 by iouali            #+#    #+#             */
-/*   Updated: 2020/11/17 10:27:10 by iouali           ###   ########.fr       */
+/*   Updated: 2020/11/20 01:17:17 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ unsigned int	ft_strlcat(char *dest, const char *src, unsigned int size)
 		i++;
 	j = 0;
 	destlen = i;
-	while (tmp_src[i] && j + i < size - 1)
+	while (tmp_src[i] && j + i < size - 1 && tmp_src[j])
 	{
 		dest[i + j] = tmp_src[j];
 		j++;

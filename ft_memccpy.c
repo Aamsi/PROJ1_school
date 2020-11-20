@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iouali <iouali@student.fr>                 +#+  +:+       +#+        */
+/*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/04 14:52:24 by iouali            #+#    #+#             */
-/*   Updated: 2020/11/13 14:43:06 by iouali           ###   ########.fr       */
+/*   Updated: 2020/11/20 01:11:53 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ void    *ft_memccpy(void *dest, const void *src, int c, size_t n)
         tmp_dest[i] = tmp_src[i];
         i++;
     }
-    tmp_dest[i] = tmp_src[i];
     if (i == n)
         return (NULL);
+    tmp_dest[i] = tmp_src[i];
     return (dest + i + 1);
 }
