@@ -6,18 +6,18 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/18 12:38:19 by iouali            #+#    #+#             */
-/*   Updated: 2020/11/18 18:14:21 by iouali           ###   ########.fr       */
+/*   Updated: 2020/11/22 17:17:28 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int  is_charset(char c, char const *set)
+static int		is_charset(char c, char const *set)
 {
-    size_t  i;
+	size_t	i;
 
-    i = 0;
-    while (set[i])
+	i = 0;
+	while (set[i])
 	{
 		if (c == set[i])
 			return (1);
@@ -26,14 +26,14 @@ static int  is_charset(char c, char const *set)
 	return (0);
 }
 
-static int	count_charset(char const *s1, char const *set)
+static int		count_charset(char const *s1, char const *set)
 {
 	size_t	i;
 	size_t	count;
 
 	count = 0;
 	i = 0;
-	while(is_charset(s1[i], set))
+	while (is_charset(s1[i], set))
 	{
 		count++;
 		i++;
@@ -49,9 +49,9 @@ static int	count_charset(char const *s1, char const *set)
 	return (count);
 }
 
-char		*ft_strtrim(char const *s1, char const *set)
+char			*ft_strtrim(char const *s1, char const *set)
 {
-    size_t  i;
+	size_t	i;
 	size_t	j;
 	size_t	len;
 	char	*str;

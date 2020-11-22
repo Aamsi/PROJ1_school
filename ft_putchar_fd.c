@@ -6,13 +6,13 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 21:45:17 by iouali            #+#    #+#             */
-/*   Updated: 2020/11/19 21:49:04 by iouali           ###   ########.fr       */
+/*   Updated: 2020/11/22 17:30:30 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }

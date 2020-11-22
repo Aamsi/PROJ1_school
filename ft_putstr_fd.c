@@ -6,15 +6,15 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 21:50:56 by iouali            #+#    #+#             */
-/*   Updated: 2020/11/19 21:52:41 by iouali           ###   ########.fr       */
+/*   Updated: 2020/11/22 17:29:43 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
 	if (!s)
-		return;
+		return ;
 	write(fd, s, ft_strlen(s));
 }

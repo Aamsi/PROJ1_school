@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 21:02:26 by iouali            #+#    #+#             */
-/*   Updated: 2020/11/19 21:33:53 by iouali           ###   ########.fr       */
+/*   Updated: 2020/11/22 17:37:58 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static size_t	count_nb(long long n)
 {
-	int			count;
+	int	count;
 
 	count = 0;
 	if (n <= 0)
@@ -30,7 +30,7 @@ static size_t	count_nb(long long n)
 	return (count);
 }
 
-char			*reverse_str(char *str)
+static char		*reverse_str(char *str)
 {
 	int		i;
 	int		j;
@@ -54,14 +54,14 @@ char			*reverse_str(char *str)
 	return (str);
 }
 
-char 			*ft_itoa(int n)
+char			*ft_itoa(int n)
 {
 	char		*result;
 	size_t		i;
 	size_t		count_digit;
 	long long	m;
 
-	m = (long long) n;
+	m = (long long)n;
 	count_digit = count_nb(m);
 	if (!(result = malloc(sizeof(char) * (count_digit + 1))))
 		return (NULL);

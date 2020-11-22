@@ -6,13 +6,13 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 21:57:16 by iouali            #+#    #+#             */
-/*   Updated: 2020/11/19 22:19:36 by iouali           ###   ########.fr       */
+/*   Updated: 2020/11/22 17:30:12 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
 	int			mod;
 	char		to_write;
@@ -20,7 +20,7 @@ void ft_putnbr_fd(int n, int fd)
 	if (n == -2147483648)
 	{
 		write(fd, "-2147483648", 11);
-		return;
+		return ;
 	}
 	if (n < 0)
 	{

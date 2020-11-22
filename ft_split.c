@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/18 18:14:39 by iouali            #+#    #+#             */
-/*   Updated: 2020/11/20 01:31:09 by iouali           ###   ########.fr       */
+/*   Updated: 2020/11/22 17:29:12 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ static int		count_words(char const *s, char c)
 	if (s[i] == '\0')
 		return (0);
 	i++;
-	while(s[i])
+	while (s[i])
 	{
 		if (s[i - 1] == c && s[i] != c)
 			count++;
@@ -78,7 +78,7 @@ static int		count_words(char const *s, char c)
 	return (count + 1);
 }
 
-char    		**ft_split(char const *s, char c)
+char			**ft_split(char const *s, char c)
 {
 	char	**strstr;
 	size_t	i;
@@ -89,7 +89,7 @@ char    		**ft_split(char const *s, char c)
 		return (NULL);
 	i = 0;
 	j = 0;
-	while((int) j < count_words(s, c))
+	while ((int)j < count_words(s, c))
 	{
 		while (s[i] == c && s[i])
 			i++;

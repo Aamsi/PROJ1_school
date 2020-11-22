@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 10:24:48 by iouali            #+#    #+#             */
-/*   Updated: 2020/11/20 01:17:17 by iouali           ###   ########.fr       */
+/*   Updated: 2020/11/22 17:25:12 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 unsigned int	ft_strlcat(char *dest, const char *src, unsigned int size)
 {
-	size_t          i;
-	size_t          j;
+	size_t			i;
+	size_t			j;
 	unsigned int	destlen;
-    unsigned char   *tmp_src;
+	unsigned char	*tmp_src;
 
-    tmp_src = (unsigned char *) src;
+	tmp_src = (unsigned char *)src;
 	i = 0;
 	if (size == 0)
 		return (ft_strlen(src));

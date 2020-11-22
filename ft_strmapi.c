@@ -6,13 +6,13 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 21:35:57 by iouali            #+#    #+#             */
-/*   Updated: 2020/11/19 21:44:48 by iouali           ###   ########.fr       */
+/*   Updated: 2020/11/22 17:22:32 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*str;
 	size_t	i;
