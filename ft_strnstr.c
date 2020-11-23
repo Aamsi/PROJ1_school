@@ -6,7 +6,7 @@
 /*   By: iouali <iouali@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 10:29:28 by iouali            #+#    #+#             */
-/*   Updated: 2020/11/23 18:20:43 by iouali           ###   ########.fr       */
+/*   Updated: 2020/11/23 18:22:31 by iouali           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	j;
 
 	if (ft_strlen(little) == 0)
-		return (big);
+		return ((char *)big);
 	i = 0;
 	while (i < len && big[i])
 	{
@@ -27,7 +27,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 		{
 			j++;
 			if (little[j] == '\0')
-				return (big + i);
+				return ((char *)big + i);
 		}
 		i++;
 	}
